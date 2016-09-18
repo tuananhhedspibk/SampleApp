@@ -1,0 +1,85 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$white-color : #fff;
+
+body{
+	padding-top: 20px;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+.jumbotron h1{
+	font-size: 75px;
+	font-weight: bold;
+}
+
+h2{
+	margin-bottom: 35px;
+	font-size: 23px;
+}
+
+.welcome-text{
+	padding: 25px 30px;
+}
+
+.main-content p{
+	font-size: 18px;
+}
+
+.main-content a{
+	color: #337ab7;
+}
+
+.main-content a.rails-link:hover{
+	background: transparent;
+	color: #337ab7;
+}
+
+/* Header */
+
+#logo {
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: $white-color;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-top: 15px;
+	font-weight: bold;
+	&:hover {
+		background: transparent;
+		color: $white-color;
+		text-decoration: none;
+	}
+}
+
+/* Footer */
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+	a {
+		color: #555;
+		background: transparent;
+		&:hover{
+			color: #222;
+			background: transparent;
+		}
+	}
+	small {
+		float: left;
+	}
+	ul {
+		float: right;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 15px;
+		}
+	}
+}
