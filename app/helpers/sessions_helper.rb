@@ -50,13 +50,13 @@ module SessionsHelper
 	# Logs out the current user.
 	def log_out
 		forget(current_user)
-		sessions.delete(:user_id)
+		session.delete(:user_id)
 		@current_user = nil
 	end
 
 	# Returns the user corresponding to the remember token cookie.
 	def current_user? user
-		current_user = user
+		current_user == user
 	end
 
 	# Redirects to stored location (or to the default).

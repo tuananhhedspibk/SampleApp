@@ -2056,3 +2056,2238 @@ Migrating to AddAdminToUsers (20161017141543)
   [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-99@railstutorial.org"], ["LIMIT", 1]]
   [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Manuel Haley"], ["email", "example-99@railstutorial.org"], ["created_at", 2016-10-17 14:18:22 UTC], ["updated_at", 2016-10-17 14:18:22 UTC], ["password_digest", "$2a$10$CWQUvLhwWSwr62U987l3k.gooHPIpL1oElbjJEnbC1EA3cSRy6yNq"]]
   [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:24:59 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2188.3ms)
+  Rendered layouts/_rails_default.html.erb (121.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2366ms (Views: 2348.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:25:15 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (696.3ms)
+Completed 500 Internal Server Error in 713ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0x007f0832f399b8>
+Did you mean?  check_box):
+    12: 			<%= f.password_field :password, class: 'form-control' %>
+    13: 
+    14: 			<%= f.label :remember_me, class: "checkbox inline" do %>
+    15: 				<%= f.checkbox :remember_me %>
+    16: 				<span>Remember me on this computer</span>
+    17: 			<% end %>
+    18: 
+  
+app/views/sessions/new.html.erb:15:in `block (2 levels) in _app_views_sessions_new_html_erb___4074115533178165586_69836595705260'
+app/views/sessions/new.html.erb:14:in `block in _app_views_sessions_new_html_erb___4074115533178165586_69836595705260'
+app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb___4074115533178165586_69836595705260'
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from status_code_with_paginate at /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/will_paginate-3.1.0/lib/will_paginate/railtie.rb:49)
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:26:54 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (333.0ms)
+  Rendered layouts/_rails_default.html.erb (75.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 431ms (Views: 421.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:26:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (39.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:26:59 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_rails_default.html.erb (54.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:27:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_rails_default.html.erb (54.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:27:19 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (235.8ms)
+  Rendered layouts/_rails_default.html.erb (43.9ms)
+  Rendered layouts/_shim.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 304ms (Views: 294.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-10-17 21:27:22 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_form.html.erb (384.7ms)
+  Rendered users/new.html.erb within layouts/application (385.7ms)
+  Rendered layouts/_rails_default.html.erb (34.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 476ms (Views: 427.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-10-17 21:28:51 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_rails_default.html.erb (33.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-17 21:29:19 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+Q0b3bEnKIM1FsEdYtrwgSfXwF4/N3BJcCC9PS55P4YYcgZ7NNkYKerNj2S9ca9E0E2P2MYcUAt7HS1vWD3Fw==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mocha@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "linhmocha"], ["email", "mocha@gmail.com"], ["created_at", 2016-10-17 14:29:19 UTC], ["updated_at", 2016-10-17 14:29:19 UTC], ["password_digest", "$2a$10$ZLsccaiqiHICHwlWh2vaWuIcDbOTlO86t5FYC4Mb/fhYoP/LqhSbu"]]
+  [1m[35m (19.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 21.3ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x007f3f89dcc150>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:25:in `create'
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:30:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_rails_default.html.erb (52.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-10-17 21:30:04 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/_form.html.erb (8.8ms)
+  Rendered users/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_rails_default.html.erb (60.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 98ms (Views: 81.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-17 21:30:14 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fR8EGgTYJkmgVRVwvde7RrP4+psitvrXu6FWug21l9eZVZE4WrTemWjRZHtx/knUdmdrGjpyg/bdJRfbITCvpQ==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mocha@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.6ms)
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_rails_default.html.erb (38.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 51.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-17 21:30:39 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uD3fbZTbkbe+j9MfD5FKlexWrUbGkOTey73p3cGsN8hjuCMbDsxpdRXwvibo7+fq+4jEeN10SF/DkR+ciHUkIQ==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_form.html.erb (14.5ms)
+  Rendered users/new.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_rails_default.html.erb (106.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 611ms (Views: 134.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-17 21:30:51 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tr/12LdFSKl+nhb5MKTMM1fjuSXtyNEHbIdySrLqXf5tOgmuLVKwa9Xhe8DX2mFMQD3QG/YsfYZkq4QL+zNOFw==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "linhmocha"], ["email", "mocha@yahoo.com"], ["created_at", 2016-10-17 14:30:51 UTC], ["updated_at", 2016-10-17 14:30:51 UTC], ["password_digest", "$2a$10$c7vWBj2uV1M8fWEQ3TbpLe89V.RikqUwPavQ27S9zTQpcL8FLVF26"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 94ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:30:51 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (33.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:30:57 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (33.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/102/edit" for 127.0.0.1 at 2016-10-17 21:31:04 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_form.html.erb (6.2ms)
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_rails_default.html.erb (34.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/102" for 127.0.0.1 at 2016-10-17 21:31:18 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9i3m/uVQy6EBbyCNy7h9M0gDZ8eJ1Uz/yOObVUeA8GUh4o5/Z7OjpC4l6yvm9ePSAQPlSJ3/SvgWi9XeLY8XVg==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["id", 102], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$TLxxebtMJxQRCTRb6deNFO41i8Jp/O.UphR2iRBxtIn7BnmNGdJ5G"], ["updated_at", 2016-10-17 14:31:19 UTC], ["id", 102]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 95ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:31:19 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (31.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:31:21 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OkRgtvFigzEa4rSsJN9j8bjYo4JMiBmrhDiz40XivI7hwZzAa3V787Gd2ZXDoc6OrwbKvFdstSqMFEWiDDuvZw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.1ms)
+
+
+  
+NameError (undefined local variable or method `sessions' for #<SessionsController:0x007f3f81521b20>
+Did you mean?  session):
+  
+app/helpers/sessions_helper.rb:53:in `log_out'
+app/controllers/sessions_controller.rb:18:in `destroy'
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:32:12 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OkRgtvFigzEa4rSsJN9j8bjYo4JMiBmrhDiz40XivI7hwZzAa3V787Gd2ZXDoc6OrwbKvFdstSqMFEWiDDuvZw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:32:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:32:15 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_rails_default.html.erb (46.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:32:25 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e5SaPBdEBrGgARc/Daw/inCuX4jAvWq6NXgmK8QA2+JBKf+NtQ6MvJyoKIIuSfAxzI3Dh6T42noazf1D0ZP4Ng==", "session"=>{"email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 77ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:32:25 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:32:28 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lcnteiY40hO+I7QOJv4ugLx9y6KXPnwvLFUl6BNMBiFOTBEMvC8q0RVc2TfBgIP/q6OinIza0K4kedOpWpUVyA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:32:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_rails_default.html.erb (27.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:32:29 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_rails_default.html.erb (38.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:32:38 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"npKFaiI9J8WS6Fuu3I4HrsWoVbw5KNyAkzvqUJoIJuqkL+DbgHetyK5BZBP/a8gVeYvJs11tbEC8jjE4j5sFPg==", "session"=>{"email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$10$eGebNQJWvd3PEub3.5f5Juovk36d6B2HG6DpFpgQaxQRUOWejYFwO"], ["updated_at", 2016-10-17 14:32:38 UTC], ["id", 102]]
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 171ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:32:39 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (30.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:32:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (36.7ms)
+  Rendered layouts/_shim.html.erb (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:32:56 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (37.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/102/edit" for 127.0.0.1 at 2016-10-17 21:32:59 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered users/_form.html.erb (7.5ms)
+  Rendered users/edit.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_rails_default.html.erb (48.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:33:05 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (8.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered users/index.html.erb within layouts/application (174.6ms)
+  Rendered layouts/_rails_default.html.erb (39.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 224ms (Views: 221.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/8" for 127.0.0.1 at 2016-10-17 21:33:10 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (48.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 64ms (Views: 61.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2016-10-17 21:33:14 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 30]]
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered users/index.html.erb within layouts/application (242.0ms)
+  Rendered layouts/_rails_default.html.erb (36.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 290ms (Views: 287.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at 2016-10-17 21:33:15 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 60]]
+  Rendered collection of users/_user.html.erb [30 times] (6.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered users/index.html.erb within layouts/application (155.9ms)
+  Rendered layouts/_rails_default.html.erb (29.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 197ms (Views: 194.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2016-10-17 21:33:17 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 90]]
+  Rendered collection of users/_user.html.erb [12 times] (8.1ms)
+  Rendered collection of users/_user.html.erb [12 times] (2.5ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.5ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.3ms)
+  Rendered collection of users/_user.html.erb [12 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.5ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.6ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.4ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.2ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.1ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.1ms)
+  Rendered collection of users/_user.html.erb [12 times] (1.5ms)
+  Rendered users/index.html.erb within layouts/application (45.0ms)
+  Rendered layouts/_rails_default.html.erb (28.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2016-10-17 21:33:19 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (22.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (179.8ms)
+  Rendered layouts/_rails_default.html.erb (31.6ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 225ms (Views: 222.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2016-10-17 21:33:22 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 30]]
+  Rendered collection of users/_user.html.erb [30 times] (8.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered users/index.html.erb within layouts/application (190.9ms)
+  Rendered layouts/_rails_default.html.erb (36.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 237ms (Views: 234.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:33:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_rails_default.html.erb (36.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2016-10-17 21:33:58 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (45.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:34:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (54.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:34:46 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f2FOLvoQG1gieFjYTIEG6oKvWxIUwiEBHnVFqfam8Lmk5LJYYAfjmokHNeGr/6uVlXEyLA8mjYAWWbPov3/jUA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", nil], ["updated_at", 2016-10-17 14:34:46 UTC], ["id", 102]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:34:46 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (27.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:34:48 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_rails_default.html.erb (34.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:34:53 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W+bhzxFfqeIy0CAcTfoKdablypZgMuVHUM18KZ2OFd1hW4R+sxUj7w55H6FuH8XOGsZWmQR3VYd/eKdBiB02CQ==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$10$pmMxQtz72Ze2heIVK90yvOWZw5OQL8gBOPvepQYElc4WOdVifKIhG"], ["updated_at", 2016-10-17 14:34:53 UTC], ["id", 1]]
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 163ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-10-17 21:34:53 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:34:58 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.8ms)
+  Rendered users/index.html.erb within layouts/application (164.5ms)
+  Rendered layouts/_rails_default.html.erb (33.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 211ms (Views: 207.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2016-10-17 21:35:08 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 30]]
+  Rendered collection of users/_user.html.erb [30 times] (8.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered users/index.html.erb within layouts/application (137.4ms)
+  Rendered layouts/_rails_default.html.erb (28.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 174ms (Views: 171.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2016-10-17 21:35:09 +0700
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered users/index.html.erb within layouts/application (144.6ms)
+  Rendered layouts/_rails_default.html.erb (30.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 189ms (Views: 186.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-10-17 21:35:11 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (80.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-10-17 21:35:14 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (39.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161010022524)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161010022524"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddIndexToUsersEmail (20161010023409)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161010023409"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20161010023946)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161010023946"]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddRememberDigestToUsers (20161017133256)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161017133256"]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddAdminToUsers (20161017141543)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161017141543"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-17 14:40:01 UTC], ["updated_at", 2016-10-17 14:40:01 UTC]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Example User"], ["email", "example@railstutorial.org"], ["created_at", 2016-10-17 14:40:07 UTC], ["updated_at", 2016-10-17 14:40:07 UTC], ["password_digest", "$2a$10$g6sAXE5S1/7ISSVaFJ97FuW0vM1nX4SjUrEC5NdniuVMLnQEaE9ze"], ["admin", true]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-1@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jana Brakus"], ["email", "example-1@railstutorial.org"], ["created_at", 2016-10-17 14:40:07 UTC], ["updated_at", 2016-10-17 14:40:07 UTC], ["password_digest", "$2a$10$nVaAyGgkPWwL61uB/A26EOPj2oquNRku2fcX86r/umM2yMqn6dDYC"]]
+  [1m[35m (102.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-2@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Werner Effertz"], ["email", "example-2@railstutorial.org"], ["created_at", 2016-10-17 14:40:07 UTC], ["updated_at", 2016-10-17 14:40:07 UTC], ["password_digest", "$2a$10$eyAW14QL8BDmAn0.uJ3hUuIy4SGDDZgcG5lBPfnwc9M7eBjtlkdY2"]]
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-3@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gabe Feest"], ["email", "example-3@railstutorial.org"], ["created_at", 2016-10-17 14:40:07 UTC], ["updated_at", 2016-10-17 14:40:07 UTC], ["password_digest", "$2a$10$O30cvX4DHJ648H72GbvJ8ef7jjSDoqz416LIGOc6u2oW8IZgoNDtS"]]
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-4@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Anabelle Hartmann"], ["email", "example-4@railstutorial.org"], ["created_at", 2016-10-17 14:40:07 UTC], ["updated_at", 2016-10-17 14:40:07 UTC], ["password_digest", "$2a$10$KjP85J0W01b9HPRj8cYt1uK.V1Qs3CbyY1G2jrHg.v/SyNYZeLi0C"]]
+  [1m[35m (17.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-5@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ivah Gleason"], ["email", "example-5@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$.xWZWp/Kg6wS98moOohq3Ob1OxF3t24LAIhBhNCVar7Lf9pGcN21K"]]
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-6@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Linnie Mitchell"], ["email", "example-6@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$hqoCI2eVdcyWon0y60dRlOr/I7ZGlLjGVP9l/eFwqiCy9Skouddhq"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-7@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mara Kozey"], ["email", "example-7@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$cHt4aZUSbXiXkk0scbMs1.CmJu6ovSn9tfy94OxrGaqjEd3es9eFi"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-8@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Earnest Bosco"], ["email", "example-8@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$7IYak98hZdB2uaOfv9I8HOhtqc9xyhiB9Lwm/Vd5rdWrM.j/izh2y"]]
+  [1m[35m (26.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-9@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Krystina Welch"], ["email", "example-9@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$a3G5ApncI/ps9EeAMBNM5.6daBLAFvXPKItNCFfnWeHDtAtn5lO8."]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-10@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bradley Wisozk PhD"], ["email", "example-10@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$7DP75AUss1/qdRxMFVP/Hu7N/x5uDxSHJPfDzWuo3hNGo4zQBGxJ."]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-11@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Eino Schuppe"], ["email", "example-11@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$PMmUkQ9thR.RQlUtVdKgI.BjwinE1lM5eU0CsWlvnlSuawGgU3xs2"]]
+  [1m[35m (26.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-12@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Hadley Waters"], ["email", "example-12@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$QevrE5HJnj31Xn0q/2/kZuXaHiFVY2pgvaycGRBeOSC7vA4EyZHfu"]]
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-13@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Misael Daugherty"], ["email", "example-13@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$7mabTRwc4UCqutvHWcqLsuzvi96ck.je6SjP7hsX48K.63IjX5zpu"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-14@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ivy Rutherford"], ["email", "example-14@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$7cXngNBcqtVfTo.xj5KHpe1YStELjtI8xdcnH4X.b5FLbMx933Vay"]]
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-15@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mustafa Dickinson"], ["email", "example-15@railstutorial.org"], ["created_at", 2016-10-17 14:40:08 UTC], ["updated_at", 2016-10-17 14:40:08 UTC], ["password_digest", "$2a$10$UMxr5sfNzqnni3F/DwWrz.79vIeniqa2PHiZ.aceC4Gmbu5F577Ru"]]
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-16@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Trent Howe"], ["email", "example-16@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$c3vDH3omP2fVQGh2a0JHg.Mi8vxHqi86vQu6Zs3ivt8w5DHMMxQaS"]]
+  [1m[35m (15.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-17@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Green Mueller"], ["email", "example-17@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$TpS4Eb2IYCwxdxScjEajAORxkwx5eqg2vRPi0vHZghTK6IfsNEU8K"]]
+  [1m[35m (19.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-18@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Amber Boyle"], ["email", "example-18@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$WIWyOYs80uiLn/ILsuodp.Dnl5hIIEC0UkdUORAMszrZEj3zfSoOW"]]
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-19@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Erick Stehr"], ["email", "example-19@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$Mubm9atREe1.AmNYNpIdIeaU6ndCdGVGUZU/SfO7g1Q457On.NK2m"]]
+  [1m[35m (29.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-20@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zora Hegmann"], ["email", "example-20@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$kli3Mvl2RHyJARCR/uxJC.X1EePU2xUmdbDs3Z.pYpIJDvmFO3.06"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-21@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bernice Okuneva"], ["email", "example-21@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$wVLRnP8U8/WzBugeX4tZ4.MB7rHhub5beVOKp6qpGYRsOfNjdGsEO"]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-22@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Gudrun Jones"], ["email", "example-22@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$nNRRJjs1WPxO/8GDkpw1r.N61Oqrk1IcN46YGdwEp0DIllpjejEY2"]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-23@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lily Maggio IV"], ["email", "example-23@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$v5eYGAxJD2jqoQ6n3fiabeO8t9TqapPUKe8gfhfCGYikgLm2OD6D2"]]
+  [1m[35m (21.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-24@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guido Erdman"], ["email", "example-24@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$NPP7McA6DLeL7t7bRpwtM.tK5MaeIEe7zRZwxMIInEpynwW5uiVQ2"]]
+  [1m[35m (15.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-25@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ross Gleichner"], ["email", "example-25@railstutorial.org"], ["created_at", 2016-10-17 14:40:09 UTC], ["updated_at", 2016-10-17 14:40:09 UTC], ["password_digest", "$2a$10$3uvxw2n471VIMiH2awqOzujIR/rmc2pEHdiBVbEPr447wsx71E0G2"]]
+  [1m[35m (24.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-26@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wilhelmine Lockman"], ["email", "example-26@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$BTa/KxKjBaD1HuSvRHFZKO94Xa57yySwRY0ITuPgDcJ9DWYl4LXZ."]]
+  [1m[35m (21.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-27@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dante Mraz"], ["email", "example-27@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$j8I8GDgSeGpJjrBqYg1OnuN9QU82MDnf84biSBCQbyk3iUW6uyDpG"]]
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-28@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jerome Schmidt"], ["email", "example-28@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$wFh3M0IUO0lIgCvWqUC4Be0q7KZHH4BWtJYeLg1pmBsB76vydHjam"]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-29@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Adah Swaniawski"], ["email", "example-29@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$Irr9B5PjG/8Brch9sFyvZe9m3n3xzaLGb8Ec0qxcaiUj4NEIGslnG"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-30@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estelle Kutch"], ["email", "example-30@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$UvgvUzSpK.CD7kfJQsuR/.biPXmmk1g3DcTNnodmkBI2wkItcGuNa"]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-31@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Easton Halvorson"], ["email", "example-31@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$op351GY7rC6p8r8tU1FQcu6RS5n/sIXOsQ0w.gVc5MqefEnbOXIuO"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-32@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Leonardo Schaefer"], ["email", "example-32@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$7yBp8WqLxOJ6eLnvkxGbjOgDZpiN0qaYBCWLbzQ1rN5sA1BtPZgYq"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-33@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Maximilian Considine"], ["email", "example-33@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$HKQYxzWw8SgIywhf3FwCjuKOD4oUwkd9khD0uGp0I7WXBVivS65F2"]]
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-34@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Judd Boehm"], ["email", "example-34@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$h.V2OFeQE7Ho1eUj3ALqjegQPleG2/5eCVSlVK8/Zgzz8qFQpjzxe"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-35@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chance Davis DDS"], ["email", "example-35@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$BO0k9f5h/PhCSsqLuKH3AukNMb10PU5qo3ST97c3LULcU8TptxPFa"]]
+  [1m[35m (20.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-36@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Amara Jast"], ["email", "example-36@railstutorial.org"], ["created_at", 2016-10-17 14:40:10 UTC], ["updated_at", 2016-10-17 14:40:10 UTC], ["password_digest", "$2a$10$TUJU0Yc9Ys7eV6N4WpVXlejq2szjnCFFh/hfLf9S7RAspQHP/AmZq"]]
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-37@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Polly Beahan"], ["email", "example-37@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$1jGRb/bfwI1QZ1.ntWNo8.IeZ4R465pgkHkb25RzN7f7yGv4GnvBy"]]
+  [1m[35m (19.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-38@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Clovis Mueller"], ["email", "example-38@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$O9Ep4/7BwK.YT4iowh3jA.9svvKsZ.a6XVqTuqd2XyRo2.crmIzqe"]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-39@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alivia Baumbach"], ["email", "example-39@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$cIxytscw3umBZ9g16HpVmuBfjbTjKjkYvahjuCVg/lmv4K6yOS8sC"]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-40@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Eliezer Wyman"], ["email", "example-40@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$46RB/Al0PbomhOZ1HFO/Re/2IIoDbW4VjRrdzwR8G4tZyi1NydK82"]]
+  [1m[35m (25.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-41@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Joey Wisozk"], ["email", "example-41@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$VkcOMRRb9TD8eT.vcaAwDe0Fv6gx.kR.UEDZjefsb22Etrqpr2Vde"]]
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-42@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stefanie Jones PhD"], ["email", "example-42@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$nxVjgysKKYCW2YT98x5ALuFqrXH2zTCmN7s8STbZ/BkUwk44jto6a"]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-43@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alvis Bechtelar"], ["email", "example-43@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$iYyifB6Gu.rk9YXHnO.bk.3x2sK1jWx6xltnmoNozVPROY85WB4/e"]]
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-44@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bettie Bernhard"], ["email", "example-44@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$HYA6QP2g7v4c8mO3ZdmL.eEKfXUecq9zcRyN5ioAGLAisNPopOky."]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-45@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Myles Bogisich"], ["email", "example-45@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$17Kq22.Ch5ZjtUol9Wv/w.y0sxn6sKLzl5g3KjaaHTuMcJ/ETR2p6"]]
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-46@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Brennan Rempel"], ["email", "example-46@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$fv2Xw0TzaWNa2.PAd7Nnk.3JbdRlLRidhBpkeCiBeYXjLQG8y86Z."]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-47@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Crawford Rogahn"], ["email", "example-47@railstutorial.org"], ["created_at", 2016-10-17 14:40:11 UTC], ["updated_at", 2016-10-17 14:40:11 UTC], ["password_digest", "$2a$10$MB2VqSszunbAkVKY/iHSj.oqRBSSeDz91lF9amr6m5Iv46kh8eJL."]]
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-48@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Evans Heathcote"], ["email", "example-48@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$9BM7zj4GvuPI8O6zgPHLS..V..3AWx0juSNwzUXn7sbVWB3Kpr/ju"]]
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-49@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zoie Kshlerin I"], ["email", "example-49@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$V/UAiabh3G1yhgp3Ex7SqusBsWs6oxIAGj11hIu7Bu9BmOImH5Pfm"]]
+  [1m[35m (19.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-50@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Noe Olson"], ["email", "example-50@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$3/1psyHxXB25tYK9D9PEKO0GgQcKPzfdTauveh9gzJu/pWweENX0S"]]
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-51@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Carmelo Conn"], ["email", "example-51@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$9iR.JlUITVRV8GorBenvWOu.u5Ah8GcbqHLVQvDj7UMOT0bUvVwQW"]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-52@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tatyana Hagenes"], ["email", "example-52@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$KXCmT7UB/UH87FNmIAHyoOMbR/UsKe.p3gSapDABobftI7oyhbr0O"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-53@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rosario Kub Sr."], ["email", "example-53@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$aldtJQO9VwdjuclIM7LWpeTiQ8IzUVhpOzvTNBsjBOy0AK1Gvw00m"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-54@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Willa Rau V"], ["email", "example-54@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$F0usOr3m2z5cNB/.EZFLy.0PZPW9egroTyQo3wdlS/rNDaXIdhz5O"]]
+  [1m[35m (20.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-55@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Erich Pollich"], ["email", "example-55@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$X2oP1Low0OMzsYhjiTDUZ.KDlLfrNKQvX3ttgvxYubPKW/T6fw70G"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-56@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jonathan Corkery"], ["email", "example-56@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$YfbfXGqn2.ZVCpfBDrM0U.TN0azlzf9FY0WZ8osmTZK2U8Fmft42m"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-57@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Alphonso Ondricka"], ["email", "example-57@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$IW49nvgI3Y1N3npV9aodkeu14QMxvlZvebPDRwHv0AT63.Hv7gvJC"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-58@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Solon Donnelly"], ["email", "example-58@railstutorial.org"], ["created_at", 2016-10-17 14:40:12 UTC], ["updated_at", 2016-10-17 14:40:12 UTC], ["password_digest", "$2a$10$MKZW2TCOCMYjx9Nugw5mKuD1ZpXLYWYMYyTgbWBsQ8tp5fjpiUs8K"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-59@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lina McKenzie"], ["email", "example-59@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$XtTYBSnn0.TTbkplHdrBcOnb5erPxQ2Y8TATIAfxxtsaWJuigjZr."]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-60@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miss Belle Russel"], ["email", "example-60@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$5yHw0PWF2XdQsiGsGbGtfe5PAPQdnnysUIoB0eOP0qMtii4ndBbOq"]]
+  [1m[35m (27.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-61@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Herminia Heaney"], ["email", "example-61@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$hr6y4r693Aw0D9VP1GJuceS.0u5b4iEkOQk5XlkT71VqauyrJAxt."]]
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-62@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Fred Ortiz"], ["email", "example-62@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$uhHRajACivXJoBrDDoimS.jnF5gFPLiXgorTIY4ml5VrcpUu0TnL2"]]
+  [1m[35m (25.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-63@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kendra Kemmer MD"], ["email", "example-63@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$M3ZyTPV.BUgG4okPirAFdepunRWejzuI/LI5GzVIqb1n97yxTFUSy"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-64@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Birdie Wyman PhD"], ["email", "example-64@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$Ik4S2fxLpPxGyi4PyxLbLeFnf.3U/1RAOcuFxf/d2Ja/gartXmvXa"]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-65@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sammy Welch II"], ["email", "example-65@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$1HWdQ8qhMxJ8Ex1Gy7qFN.KdSml14zR/HEwH77uAtJUh46lxp7ql2"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-66@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lewis Bode"], ["email", "example-66@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$mv1xNbM4R.1ZhgeOxU56.O0Vnpcn0vWiEVyCHkdMKWB0Sq1Ax4KqK"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-67@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Adelle Purdy"], ["email", "example-67@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$JBX50ohEouuLNRsHhU8.6ONQEXWIpfE5bLyKU/F3yRwmC1R8sWwWK"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-68@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kristian Okuneva"], ["email", "example-68@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$tLQlITS0kn7VPSSk4FYpfOSC/YbSdhd87awwMmzjUoK4NSC6YhVtm"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-69@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Haley Lind"], ["email", "example-69@railstutorial.org"], ["created_at", 2016-10-17 14:40:13 UTC], ["updated_at", 2016-10-17 14:40:13 UTC], ["password_digest", "$2a$10$do98Kb3ImdxtMBjmaKltDuUEyJ53HwTDird9dUgV0Te6feQF9nCyy"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-70@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Neil Turcotte"], ["email", "example-70@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$DkrgNkcJT1JTJ71G3gCYvusWPz1PQFElJDVR8iBSWICEaG77mZjgS"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-71@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenyatta Tremblay"], ["email", "example-71@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$Iev02/4dk.Qjpw/erJiUQeqYkXFrX4uoL6iWL2XdylY1XrWvc2WKW"]]
+  [1m[35m (23.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-72@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jeanette Nader"], ["email", "example-72@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$9JDV/XupajtmUBg10WPsReXfhwLp/dX24GPR/hnzRsEzehVyg7nzC"]]
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-73@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Krystal O'Reilly"], ["email", "example-73@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$WIiVv73msoZ.6Gi6HLr/6emoR/UmzNZxBm0kx5t.6Oboe8T.mHq0m"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-74@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Violette Green IV"], ["email", "example-74@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$/Q1I4NVH9eQCLXJqvtoFVuFWDW9O9.1IL6tVQ0RrbLDpHTQv.QFmC"]]
+  [1m[35m (25.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-75@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nora Bauch"], ["email", "example-75@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$.vrazdRzK.Cgmm3DsAcDVOaIj0ixOofgQVW2wYXzBbznKnAxQkuTy"]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-76@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Coleman Stamm Jr."], ["email", "example-76@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$u5pbqvYhR3aZnnb58ZDfXe3VYCmXVBQR2uO7xvQYx6N15bUaw3MFe"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-77@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Favian Brekke"], ["email", "example-77@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$JuZTj/99s003ARfxJS7n2u5zWpAa/WiW11XdFck.U9wZxrmqgP5/y"]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-78@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bethany Lynch V"], ["email", "example-78@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$p9tiCl4qkJ3jnW6URcJSg.7t40CQwd2Re.U6OlVikd8FtLaLtYB.y"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-79@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Brain Greenholt"], ["email", "example-79@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$ayD4BPZxIBAmK4ZVsdrv8u..QL35i7QEh0iziGcWzQf6VbgXZfIHO"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-80@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Conrad Champlin"], ["email", "example-80@railstutorial.org"], ["created_at", 2016-10-17 14:40:14 UTC], ["updated_at", 2016-10-17 14:40:14 UTC], ["password_digest", "$2a$10$87rqVePwvmFJt6Xvid6vFebLaE3XixiybKTxy2T2LZITRW9ykrc9."]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-81@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Florian Jerde I"], ["email", "example-81@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$7XSE18fmtQ5eECATMaZPFezTWCVHXrARrvPiY97fTj.gDDbKUkIaO"]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-82@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sonny Rau I"], ["email", "example-82@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$1bWXsBZ89L8t8ykSnfw/auZWwCDAs9.WFaXNl9t9i3pbJNO.m4GXu"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-83@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Candice Sipes MD"], ["email", "example-83@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$/QzngPrCYXBsDNxWeLO55eNJW/SQDKUwJ6C0kWQAeNfF8iqvcLJSW"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-84@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Deanna Mills"], ["email", "example-84@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$E6nO/rQoVlYyxmYlTPtIUe7/fFEVCCW.Yd5/SpCYJQBpanLh5Q39K"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-85@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zander Denesik PhD"], ["email", "example-85@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$GHK51bbXMJ0BskDoosKsleMNjbDyFu1isvZwzcriFHWzRZoMyhjHW"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-86@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hal Littel"], ["email", "example-86@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$kuyymVGafnwUZO8Dkcku4uL/v2dRoXenZhypDjle4lclPnIwJ9V8S"]]
+  [1m[35m (23.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-87@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jules Deckow"], ["email", "example-87@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$t3EeT4GWWHSOifhtzT2qkODQXXcVq0L8YM8J1ZNq0HSU8Zn2q3lNy"]]
+  [1m[35m (19.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-88@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Jessica Jacobi"], ["email", "example-88@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$y9GZAXGXq2tA1v6w5PMMNO8uqsUbE7EiLMouh9evNlwdv2/utvvd2"]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-89@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Frank Hammes"], ["email", "example-89@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$U0ONmYAkgax2AbMKd1CT4eZD8.HFmwpeZiEBtQj/rDwQFDIVt5D5K"]]
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-90@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Adelbert Predovic IV"], ["email", "example-90@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$9wO.3c5qJgercqSV7jRXx.728rTDZXUJludaljIKlmHZseBoj5Qtu"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-91@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Roman Runolfsson"], ["email", "example-91@railstutorial.org"], ["created_at", 2016-10-17 14:40:15 UTC], ["updated_at", 2016-10-17 14:40:15 UTC], ["password_digest", "$2a$10$4Y.wqhT7NRy7RRgR5og3geW1UK4z8m7VVxvwA.usnILHZ8Sq3lKHK"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-92@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Georgette Grimes MD"], ["email", "example-92@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$dGjq3Bd4NtBbiRLemcUCdeK2EcwDWXLIK9E8jASnRevAz67RKOs1a"]]
+  [1m[35m (20.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-93@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Anna Herzog"], ["email", "example-93@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$0s3FrnuTa0b4/T8s0teSxu/fMMfRKlZxRJAyqAjzoGC9Jp9j01VmC"]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-94@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lew Kertzmann"], ["email", "example-94@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$nCnQMUZ0GHVZHkYEEeC2tOLq4UGwCUq5gtKf./vKqJJXezSXDKWEm"]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-95@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Green West"], ["email", "example-95@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$5/HBv5iJd6BT53fszdQNbeDN1lOBWi8El/viHSI9mrTCohR1gULy6"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-96@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nova Dickens"], ["email", "example-96@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$EqCl7QVzq0LwmTuxG4FOouVKrURc5awOcAaLr/NIOBm9Q//ZlwIXW"]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-97@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dolores Lockman"], ["email", "example-97@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$0jAo7Ec2KSGJiyMo4taQf.FR.9w7eBdIxwl3q3.A2fp61BavNfAF2"]]
+  [1m[35m (22.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-98@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Regan Bauch"], ["email", "example-98@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$7Ekr5N2CLpGlfltpSwgdCOW3Ch51qlXF2KwhCqq8DkJO6A2tZS4uC"]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "example-99@railstutorial.org"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Franz Nienow"], ["email", "example-99@railstutorial.org"], ["created_at", 2016-10-17 14:40:16 UTC], ["updated_at", 2016-10-17 14:40:16 UTC], ["password_digest", "$2a$10$XYO1qlchbGKUwxGcYe0NGugcK5hNEkpLDtbU8LFEUzyT7SJ/aj0vi"]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:40:30 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (384.5ms)
+  Rendered layouts/_rails_default.html.erb (90.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (17.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 515ms (Views: 503.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-10-17 21:40:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (41.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:40:46 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (3.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered users/index.html.erb within layouts/application (465.2ms)
+  Rendered layouts/_rails_default.html.erb (25.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 506ms (Views: 502.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:40:54 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S2tc3/2GAPmwP4wMchTeDC612eahR4ZZteYM7h9KpyCQ7qCpZ5H4OxtA4TWVanNzOWuw2LqjKti9yvqvVpO0yQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:40:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (26.7ms)
+  Rendered layouts/_shim.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:40:56 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_rails_default.html.erb (38.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:41:00 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5SmxXvb9vdGGldPDCzEkuo8kOcpdW7Xz2eyGwvhs34jflNTvVLc33Lo87H4o1OsBMwelxTkeBTP2WV2q7f/8XA==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 76ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-10-17 21:41:00 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (28.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:41:02 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (4.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (144.2ms)
+  Rendered layouts/_rails_default.html.erb (34.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 186ms (Views: 183.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:44:44 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (18.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered users/index.html.erb within layouts/application (256.6ms)
+  Rendered layouts/_rails_default.html.erb (44.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 326ms (Views: 311.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2016-10-17 21:44:54 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B8LtM4SeYvCuuUZoWw1YKyL4j+NbcdLQOT1/uAm0mq/cRxFFHomaMgXGK1G8c/VUNSbm3UCVflExEYn5QG2JRg==", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `current_user_admin?' for #<UsersController:0x007f46ccc2b0e0>
+Did you mean?  current_user?):
+  
+app/controllers/users_controller.rb:69:in `admin_user'
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mylaptop/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.3ms)
+Started DELETE "/users/2" for 127.0.0.1 at 2016-10-17 21:45:20 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B8LtM4SeYvCuuUZoWw1YKyL4j+NbcdLQOT1/uAm0mq/cRxFFHomaMgXGK1G8c/VUNSbm3UCVflExEYn5QG2JRg==", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (17.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 33ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:45:20 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (14.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (12.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (15.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.8ms)
+  Rendered users/index.html.erb within layouts/application (278.5ms)
+  Rendered layouts/_rails_default.html.erb (42.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 330ms (Views: 327.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/8" for 127.0.0.1 at 2016-10-17 21:45:27 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yna7dTZHV0Eu8ME4itTZG/REnwZ0WqvK+mfHF1s7dwm580cDrFCvg4WPrAFtqnRk45r2OG++B0vySzFWEuJk4A==", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (24.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms (ActiveRecord: 26.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:45:27 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (13.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (12.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (13.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (13.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.7ms)
+  Rendered users/index.html.erb within layouts/application (293.7ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 337ms (Views: 333.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:45:48 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (246.6ms)
+  Rendered layouts/_rails_default.html.erb (42.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (14.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 321ms (Views: 312.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-10-17 21:45:52 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (62.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:47:41 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (9.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.2ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.9ms)
+  Rendered users/index.html.erb within layouts/application (538.0ms)
+  Rendered layouts/_rails_default.html.erb (246.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 824ms (Views: 794.1ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/11" for 127.0.0.1 at 2016-10-17 21:47:53 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X7uGgYNb+qKSto7cvORxXf0BOQSvgUvULGZXusgTLkSEPnr3GUwCYDnJ4+Vbmtwi6t9QOrRl51UkSqH7gco9rQ==", "id"=>"11"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 21ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:47:53 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (9.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (15.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (15.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (16.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (12.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (13.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (13.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (8.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (9.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (13.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (10.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (11.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (6.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered users/index.html.erb within layouts/application (328.6ms)
+  Rendered layouts/_rails_default.html.erb (35.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 376ms (Views: 370.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:48:04 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bNYA1gyKoXYCWvwmUATR3odstZg/twmKPfNryw1mGCK3U/yglp1ZtKklkR+3enyhkLLcpiRTpQs1352KRL8Lyw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:48:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (33.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:48:05 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_rails_default.html.erb (35.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:48:11 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Grd923asWufQQvXf+x7yug3+VPeMKzuYEYJIVYQFgbcgChhq1ObQ6uzrymLY+z0Bsd3I+Ohui1g+N5M9kZaiYw==", "session"=>{"email"=>"mocha@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@yahoo.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (44.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:48:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_rails_default.html.erb (37.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-10-17 21:48:20 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/new.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_rails_default.html.erb (35.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-17 21:48:33 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7cvZQ/uu8ZNepuSJkDCozHP7+iHOJQH6Q/ZP3y33wnj/bpHUYJDFoX+6pnqaTAx9FB+aZ/87SaPi5heUDLnew==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mocha@mail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "linhmocha"], ["email", "mocha@mail.com"], ["created_at", 2016-10-17 14:48:34 UTC], ["updated_at", 2016-10-17 14:48:34 UTC], ["password_digest", "$2a$10$5gSGAO5Zu4z95OnjnAuIbON7qsABcwspR3Udd8dqtBcGKJP3eK5pK"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 118ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2016-10-17 21:48:34 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (30.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:48:38 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8RuEdw3Aa7zuDu0a44DClWWR3Xy+zrz0Hp/z9sc7UygqnngBl9eTfkVxgCME/m/qck+0QqUqEHUWswW3juJAwQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:48:38 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (30.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:48:53 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (39.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:49:02 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wj7GdfzzDw2RZYOcOpIqgquR4c+3PBA1pTflqdgBYQP4g6PEXrmFAK3MvCEZd+U5F7J9wNN5oPWKgj7BzZJC1w==", "session"=>{"email"=>"mocha@mail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@mail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$10$g0/z.iZLClqn35d3eDOTquHxaSPdfCpPEhWkraOCAdTNlUJ2gl61u"], ["updated_at", 2016-10-17 14:49:02 UTC], ["id", 101]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 164ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2016-10-17 21:49:02 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (34.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:49:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (35.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2016-10-17 21:49:15 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (51.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/101/edit" for 127.0.0.1 at 2016-10-17 21:49:19 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (8.2ms)
+  Rendered users/edit.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_rails_default.html.erb (45.0ms)
+  Rendered layouts/_shim.html.erb (1.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/101" for 127.0.0.1 at 2016-10-17 21:49:42 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"syRwMpkbfJPwE2aQY+ck3CWLQMe8dJ/aH2mZossCOF7rdpcOm7FyOHbVGvuPK86gOsj3NK0J29y7OTV+Pp/ZTg==", "user"=>{"name"=>"linhmocha", "email"=>"mocha@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"101"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "mocha@mail.com"], ["id", 101], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$Essq2nMbmRQk5.e9UXu2JerxXtkINwBoXYpNVd3xSV.wqq59/skyu"], ["updated_at", 2016-10-17 14:49:42 UTC], ["id", 101]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 106ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2016-10-17 21:49:42 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (58.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-10-17 21:49:45 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8dUroYGPLwX2MmQ2hRgH9fM03Gh18mSsIfTneDc3xxsQqjYHBHEfrynpKk9as1gwBK6T7ozZRO4qyXcqQXM9Q=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", nil], ["updated_at", 2016-10-17 14:49:45 UTC], ["id", 101]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:49:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_rails_default.html.erb (53.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-10-17 21:49:47 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (326.0ms)
+  Rendered layouts/_rails_default.html.erb (31.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 367ms (Views: 365.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:49:53 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"czClOPxDEmnahLK9DNpweqO9laqqKYqTWc+3VMdMFyBJjcCJXgmYZOYtjQAvP7/BH54Jpc5sOlN2emw80t809A==", "session"=>{"email"=>"mocha@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@mail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (29.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 116ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-10-17 21:50:01 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"heic51IAhO5mp2Ymj9RVQd/5cwgRYc6EIzFc5pLaSoFebWCRyBd8LM3YCx9oqvg+yCcaNgqFYgUrHaqn2wNZaA==", "session"=>{"email"=>"mocha@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mocha@mail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 76ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2016-10-17 21:50:01 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (32.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-17 21:50:15 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of users/_user.html.erb [30 times] (5.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (7.3ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.5ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.7ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (5.1ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.4ms)
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (2.9ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.0ms)
+  Rendered collection of users/_user.html.erb [30 times] (3.7ms)
+  Rendered users/index.html.erb within layouts/application (149.3ms)
+  Rendered layouts/_rails_default.html.erb (30.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 192ms (Views: 189.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-17 21:50:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (34.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+

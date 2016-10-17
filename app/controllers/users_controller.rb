@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 		if @user.save
 			log_in @user
 			flash[:success] = "Welcome to the Sample App!"
-			redirect_back_or user
+			redirect_back_or @user
 		else
 			render 'new'
 		end
@@ -66,6 +66,6 @@ class UsersController < ApplicationController
 
 		# Confirms an admin user.
 		def admin_user
-			redirect_to(root_url) unless current_user_admin?
+			redirect_to(root_url) unless current_user.admin?
 		end
 end
