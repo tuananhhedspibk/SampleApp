@@ -9,6 +9,7 @@ class User < ApplicationRecord
 					  format: { with: VALID_EMAIL_REGEX },
 					  uniqueness: { case_sensitive: false }
 	has_secure_password
+	has_many :microposts, dependent: :destroy
 	validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
 	# Returns the hash digest of the given string.
@@ -67,6 +68,10 @@ class User < ApplicationRecord
 	# Forgets a user.
 	def forget
 		update_attribute(:remember_digest, nil)
+	end
+
+	def feed
+		Micropost.where("user_id = ?", id)
 	end
 
 	private
